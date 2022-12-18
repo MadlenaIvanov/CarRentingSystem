@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CarRentingSystem.Data.Migrations
+namespace CarRentingSystem.Migrations
 {
     [DbContext(typeof(CarRentingDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    partial class CarRentingDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -76,7 +76,7 @@ namespace CarRentingSystem.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

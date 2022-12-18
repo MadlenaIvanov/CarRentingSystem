@@ -21,12 +21,12 @@ namespace CarRentingSystem.Infrastructure
 
         private static void SeedCategories(CarRentingDbContext data)
         {
-            if (data.Category.Any())
+            if (data.Categories.Any())
             {
                 return;
             }
 
-            data.Category.AddRange(new[]
+            data.Categories.AddRange(new[]
             {
                 new Category { Name = "Mini" },
                 new Category { Name = "Economy" },
